@@ -2,6 +2,8 @@ import React from 'react';
 
 import CustomerReviews from './CustomerReviews';
 import ReviewThisProduct from './ReviewThisProduct';
+import ImageCarousel from './ImageCarousel';
+
 
 class ReviewModule extends React.Component {
   constructor(props) {
@@ -18,6 +20,9 @@ class ReviewModule extends React.Component {
         {`${value}`}
         <CustomerReviews />
         <ReviewThisProduct />
+        <div className="middle-container">
+          <ImageCarousel />
+        </div>
       </div>
     );
   }

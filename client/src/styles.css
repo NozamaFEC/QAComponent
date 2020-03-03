@@ -6,12 +6,12 @@
 /* Customer Review Component */
 .CustomerReviews {
     display: grid;
-    grid-template-columns: 17em 1fr;
+    grid-template-columns: 14em 1fr;
     grid-template-rows: 0.5fr 1fr 15em;
     grid-template-areas:
-        "reviewRating imageCarousal"
-        "addReview reviewComments"
-        ". reviewComments"
+        "reviewRating middle-container"
+        "addReview middle-container"
+        ". middle-container"
 
     ;
     border-color: black;
@@ -153,14 +153,14 @@ AddReview Component Styles
 
 .ReviewRating table {
     border-collapse: collapse;
-    border-spacing: 2px;
+    border-spacing: 1px;
     
 }
 
 .rating-bar-container {
     z-index: -1;
     display: block;
-    width: 10em;
+    width: 6em;
     background: linear-gradient(to bottom, #eee, #f6f6f6);
     background-image: linear-gradient(rgb(238, 238, 238), rgb(246, 246, 246));
     background-position-x: initial;
@@ -170,7 +170,7 @@ AddReview Component Styles
     background-origin: initial;
     background-clip: initial;
     background-color: #f3f3f3;
-    height: 17px;
+    height: 1em;
     text-align: center;
     border-radius: 1px;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .4),
@@ -250,3 +250,72 @@ AddReview Component Styles
 .textComponent {
     margin-left: 1em;
 }
+/* * * *  middle-container style div * * * */
+.middle-container {
+    grid-area: middle-container;
+    display: grid;
+    grid-template-columns: 0.1fr 0.85fr 0.05fr;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas: 
+                        ". imageCarousel ."
+                        ". topReviews ."
+    ;
+}
+/* .imageCarousel {
+        grid-area: imageCarousel;
+        float: left;
+        max-width: 680px;
+        width: 90.5%;
+        position: relative;
+        overflow: visible;
+        zoom: 1;
+        min-height: 1px;
+        display: block;
+
+} */
+/* * * * Image Carousel Component * * * */
+
+.ImageCarousel {
+    grid-area: imageCarousel;
+    max-width: 680px;
+    width: 90.5%;
+    display: block;
+    zoom: 1;
+    min-height: 1px;
+}
+
+.ImageCarousel h3 {
+    padding: 0;
+    margin: 0 !important;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.255;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+    color: #111;
+    text-rendering: optimizeLegibility;
+}
+
+.ImageCarousel img {
+    vertical-align: top;
+    border: 0;
+    width: 24.5%;
+}
+
+.image-container {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* * * * ReviewComments Component * * * */
+.ReviewComments {
+    grid-area: topReviews;
+}
+

@@ -1,8 +1,8 @@
 {
-  "name": "QAComponent",
+  "name": "qacomponent",
   "version": "1.0.0",
   "description": "Question & Answer Component for Nozama, An amazon clone app",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "react-dev": "webpack --watch --mode development",
