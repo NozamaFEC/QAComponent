@@ -1,47 +1,67 @@
 import React from 'react';
 
-class ReviewComments extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selected: true,
-    };
-    this.onButtonClicks = this.onButtonClicks.bind(this);
-  }
+import StarRatingComponent from 'react-star-rating-component';
+import { texts } from './sampleText';
 
-  onButtonClicks() {
-    this.setState((state) => ({
-      selected: !state.selected,
-    }));
-  }
+const ReviewComments = () => (
+  <div className="ReviewComments rating-text">
+    <form>
+      <select className="dropDown">
+        <option>Top Reviews</option>
+        <option>Most recent</option>
+      </select>
+    </form>
 
-  render() {
-    const { selected } = this.state;
-    return (
-      <div className="ReviewComments">
-        <div className="dropdown">
-          <button
-            type="button"
-            className="dropbtn"
-            onClick={this.onButtonClicks()}
+    { texts.map((text) => (
+      <div key={text.id} className="Comments">
+        <div className="spacing-mini">
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            alt="stock_image"
+          />
+          <span>{text.profileName}</span>
+        </div>
+        <div>
+          <StarRatingComponent
+            className="starComponent"
+            name="valueForMoney"
+            value={text.rating}
+            editing={false}
+          />
+          <i className="icon-text-seperator" />
+          <span className="rating-text" style={{ fontWeight: 700, color: '#111111' }}>{text.subjectLine}</span>
+        </div>
+        <p>
+          Reviewed in the
+          {` ${text.location} `}
+          on
+          {` ${text.date}`}
+        </p>
+        <div>
+          <span>{`${text.itemDescription}`}</span>
+          <i className="icon-text-seperator" />
+          <span style={{
+            color: '#c45500', fontWeight: 700, fontSize: '11px', linHeight: 1.465,
+          }}
           >
-            Top Reviews
-            <i className="fa fa-caret-down" />
-          </button>
-          <div
-            className="dropdown-content"
-            id="myDropdown"
-            style={selected ? { display: 'block' } : { display: 'none' }}
-          >
-            <ul>
-              <li>Link</li>
-              <li>Link</li>
-            </ul>
-          </div>
+            Verified Purchase
+          </span>
+        </div>
+        <span>
+          {`${text.text}`}
+        </span>
+        <p>173 people found this helpful</p>
+        <div>
+          <button type="button" className="helpful">Helpful</button>
+          <i className="icon-text-seperator" />
+          <span>Comment</span>
+          <i className="icon-text-seperator" />
+          <span>Report abuse</span>
         </div>
       </div>
-    );
-  }
-}
+    ))}
+  </div>
+
+);
 
 export default ReviewComments;

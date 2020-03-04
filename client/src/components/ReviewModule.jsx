@@ -3,6 +3,7 @@ import React from 'react';
 import CustomerReviews from './CustomerReviews';
 import ReviewThisProduct from './ReviewThisProduct';
 import ImageCarousel from './ImageCarousel';
+import ReviewComments from './ReviewComments';
 
 
 class ReviewModule extends React.Component {
@@ -16,12 +17,13 @@ class ReviewModule extends React.Component {
   render() {
     const { value } = this.state;
     return (
-      <div className="CustomerReviews">
+      <div className="ReviewModule">
         {`${value}`}
         <CustomerReviews />
         <ReviewThisProduct />
         <div className="middle-container">
           <ImageCarousel />
+          <ReviewComments />
         </div>
       </div>
     );

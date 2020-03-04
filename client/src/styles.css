@@ -4,10 +4,10 @@
 
 
 /* Customer Review Component */
-.CustomerReviews {
+.ReviewModule {
     display: grid;
     grid-template-columns: 14em 1fr;
-    grid-template-rows: 0.5fr 1fr 15em;
+    grid-template-rows:  30em 30em 1fr;
     grid-template-areas:
         "reviewRating middle-container"
         "addReview middle-container"
@@ -52,7 +52,7 @@ AddReview Component Styles
 
 }
 
-.AddReview button {
+.buttonStyles {
     width: 100%;
     color: #111;
     margin-bottom: 10px;
@@ -126,7 +126,7 @@ AddReview Component Styles
 
 /* * * * Customer Reviews Component  * * * */
 .ReviewRating {
-    grid-area: reviewRating
+    grid-area: reviewRating;
 }
 
 .ReviewRating h2 {
@@ -219,8 +219,9 @@ AddReview Component Styles
 .rating-text {
     font-size: 13px !important;
     line-height: 19px !important;
-    color: #555 !important;
+    color: #767676;
 }
+
 
 /* * * * By Feature Component * * * */
 .ByFeature table {
@@ -255,10 +256,10 @@ AddReview Component Styles
     grid-area: middle-container;
     display: grid;
     grid-template-columns: 0.1fr 0.85fr 0.05fr;
-    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-rows: 0.05fr 0.95fr;
     grid-template-areas: 
                         ". imageCarousel ."
-                        ". topReviews ."
+                        ". reviewComments ."
     ;
 }
 /* .imageCarousel {
@@ -277,11 +278,11 @@ AddReview Component Styles
 
 .ImageCarousel {
     grid-area: imageCarousel;
-    max-width: 680px;
+    max-width: 500px;
     width: 90.5%;
     display: block;
     zoom: 1;
-    min-height: 1px;
+    min-height: 250px;
 }
 
 .ImageCarousel h3 {
@@ -303,6 +304,7 @@ AddReview Component Styles
     vertical-align: top;
     border: 0;
     width: 24.5%;
+    
 }
 
 .image-container {
@@ -316,6 +318,85 @@ AddReview Component Styles
 
 /* * * * ReviewComments Component * * * */
 .ReviewComments {
-    grid-area: topReviews;
+    grid-area: reviewComments;
+    max-width: 500px;
 }
+
+.ReviewComments select {
+    background: #e7e9ec;
+    border-radius: 3px;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px !important;
+}
+
+.spacing-mini {
+    border-radius: 34px;
+    border: 2px solid #FFF;
+    background-color: #FFF;
+    width: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1.992;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.spacing-mini img {
+    width: 2em;
+    height: 2em;
+    padding-right: 9px;
+}
+
+.spacing-mini span {
+    text-align: center;
+}
+
+.icon-text-seperator {
+    display: inline-block;
+    margin: -2px .67375em 0;
+    width: 1px;
+    background-color: #ddd;
+    line-height: 0;
+    height: 14px;
+    vertical-align: middle;
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-003a053…._V2_.png);
+    background-size: 400px 900px;
+    background-repeat: no-repeat;
+}
+
+.Comments {
+    margin-bottom: 1em;
+}
+
+.helpful {
+    color: #111;
+    margin-bottom: 10px;
+    background: #e7e9ec;
+    border-radius: 3px;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    text-decoration: none !important;
+    vertical-align: middle;
+    padding: 5px 0;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 0;
+    outline: 0;
+    padding: 0 10px 0 11px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.dropDown {
+    padding-right: 20px;
+}
+
+
 
