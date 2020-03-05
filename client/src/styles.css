@@ -98,7 +98,7 @@ AddReview Component Styles
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    max-height: 50vh;
+    max-height: 40vh;
     margin: auto;
     height: auto;
 }
@@ -175,45 +175,7 @@ AddReview Component Styles
     border-radius: 1px;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .4),
         inset 0 0 0 1px rgba(0, 0, 0, .1);
-    transition: width .5s ease;
-}
-
-.bar-5 {
-    display: block;
-    margin-left: 0;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(to bottom, #ffce00, #ffa700);
-    background-color: #ffce00
-}
-
-.bar-4 {
-    margin-left: 0em;
-    width: 30%;
-    height: 100%;
-    background: linear-gradient(to bottom, #ffce00, #ffa700);
-    background-color: #ffce00
-}
-
-.bar-3 {
-    width: 10%;
-    height: 100%;
-    background: linear-gradient(to bottom, #ffce00, #ffa700);
-    background-color: #ffce00
-}
-
-.bar-2 {
-    width: 4%;
-    height: 100%;
-    background: linear-gradient(to bottom, #ffce00, #ffa700);
-    background-color: #ffce00
-}
-
-.bar-1 {
-    width: 15%;
-    height: 100%;
-    background: linear-gradient(to bottom, #ffce00, #ffa700);
-    background-color: #ffce00
+    
 }
 
 .rating-text {
@@ -256,24 +218,17 @@ AddReview Component Styles
     grid-area: middle-container;
     display: grid;
     grid-template-columns: 0.1fr 0.85fr 0.05fr;
-    grid-template-rows: 0.05fr 0.95fr;
+    grid-template-rows: 0.2fr 0.8fr; 
     grid-template-areas: 
                         ". imageCarousel ."
                         ". reviewComments ."
     ;
 }
-/* .imageCarousel {
-        grid-area: imageCarousel;
-        float: left;
-        max-width: 680px;
-        width: 90.5%;
-        position: relative;
-        overflow: visible;
-        zoom: 1;
-        min-height: 1px;
-        display: block;
+/* * * * ADD COMMENT SECTION * * * */
+.addCommentPage {
+    grid-area: reviewComments;
+}
 
-} */
 /* * * * Image Carousel Component * * * */
 
 .ImageCarousel {
@@ -300,11 +255,14 @@ AddReview Component Styles
     text-rendering: optimizeLegibility;
 }
 
-.ImageCarousel img {
+.image-container img {
     vertical-align: top;
     border: 0;
-    width: 24.5%;
-    
+    width: 22.5%;
+    padding: 0.25%;
+    height: 4.5em;
+    flex: 1 1 0;
+    object-fit: cover;
 }
 
 .image-container {
@@ -313,7 +271,9 @@ AddReview Component Styles
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    justify-content: space-around;
 }
 
 /* * * * ReviewComments Component * * * */

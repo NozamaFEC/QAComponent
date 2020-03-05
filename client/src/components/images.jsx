@@ -18,5 +18,45 @@ module.exports = {
       alt: 'image4',
       key: 4,
     },
+    {
+      src: 'https://www.tesla.com/sites/tesla/files/carousel/image/charger-2%402.jpg',
+      alt: 'image1',
+      key: 5,
+    },
+    {
+      src: 'https://www.tesla.com/sites/tesla/files/carousel/image/charger-2%402.jpg',
+      alt: 'image1',
+      key: 6,
+    },
+    {
+      src: 'https://www.tesla.com/sites/tesla/files/carousel/image/charger-2%402.jpg',
+      alt: 'image1',
+      key: 7,
+    },
+    {
+      src: 'https://www.tesla.com/sites/tesla/files/carousel/image/charger-2%402.jpg',
+      alt: 'image1',
+      key: 8,
+    },
+    {
+      src: 'https://www.tesla.com/sites/tesla/files/carousel/image/charger-2%402.jpg',
+      alt: 'image1',
+      key: 9,
+    },
+    {
+      src: 'https://www.tesla.com/sites/tesla/files/carousel/image/charger-2%402.jpg',
+      alt: 'image1',
+      key: 10,
+    },
+    {
+      src: 'https://www.tesla.com/sites/tesla/files/carousel/image/charger-2%402.jpg',
+      alt: 'image1',
+      key: 11,
+    },
+    {
+      src: 'https://www.tesla.com/sites/tesla/files/carousel/image/charger-2%402.jpg',
+      alt: 'image1',
+      key: 12,
+    },
   ],
 };

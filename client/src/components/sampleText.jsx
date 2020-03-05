@@ -1,5 +1,5 @@
 module.exports = {
-  texts: [
+  texting: [
     {
       id: 1,
       profileName: 'Zach Yusuf',

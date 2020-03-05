@@ -4,4 +4,4 @@ import './styles.css';
 
 import ReviewModule from './components/ReviewModule';
 
-ReactDOM.render(<ReviewModule />, document.getElementById('reviewModule'));
+ReactDOM.render(<ReviewModule />, document.getElementById('zach'));
