@@ -1,0 +1,59 @@
+/* * * * Customer Reviews Component  * * * */
+.ReviewRating {
+    grid-area: reviewRating;
+}
+
+.ReviewRating h2 {
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    font-size: 1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+.ratingLetterSpace {
+    font-size: 17px !important;
+    line-height: 1.255 !important;
+    text-rendering: optimizeLegibility;
+    margin: 0 0.5em;
+}
+
+.ReviewRating table {
+    border-collapse: collapse;
+    border-spacing: 1px;
+
+}
+
+.ratingBarContainer {
+    z-index: -1;
+    display: block;
+    width: 6em;
+    background: linear-gradient(to bottom, #eee, #f6f6f6);
+    background-image: linear-gradient(rgb(238, 238, 238), rgb(246, 246, 246));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #f3f3f3;
+    height: 1em;
+    text-align: center;
+    border-radius: 1px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .4),
+        inset 0 0 0 1px rgba(0, 0, 0, .1);
+
+}
+
+.ratingText {
+    font-size: 13px !important;
+    line-height: 19px !important;
+    color: #767676;
+}

@@ -1,7 +1,9 @@
 import React from 'react';
 
+import styles from './AddComment.module.css';
+
 const AddCommentPage = () => (
-  <div className="addCommentPage">
+  <div className={styles.addCommentPage}>
     <form>
       <label htmlFor="hello">
         Add a headline

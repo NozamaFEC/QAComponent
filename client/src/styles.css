@@ -7,12 +7,12 @@
 .ReviewModule {
     display: grid;
     grid-template-columns: 14em 1fr;
-    grid-template-rows:  30em 30em 1fr;
+    grid-template-rows: 25em 5em 30em 1fr;
     grid-template-areas:
+        "reviewRating middle-container"
         "reviewRating middle-container"
         "addReview middle-container"
         ". middle-container"
-
     ;
     border-color: black;
     grid-gap: 2px;
@@ -31,7 +31,7 @@ AddReview Component Styles
 *
 *
  */
-
+/* 
 .AddReview {
     grid-area: addReview;
     flex-wrap: nowrap;
@@ -88,10 +88,10 @@ AddReview Component Styles
     font-size: 13px;
     line-height: 19px;
 
-}
+} */
 
 /* * * * Ad Component * * * */
-
+/* 
 .AdComponent {
     grid-area: ad;
     display: block;
@@ -101,9 +101,9 @@ AddReview Component Styles
     max-height: 40vh;
     margin: auto;
     height: auto;
-}
+} */
 
-/* * * * Spacing Border * * * */
+/* * * * Spacing Border * * *
 
 .spacingBorder {
     background-color: transparent;
@@ -122,10 +122,10 @@ AddReview Component Styles
     border-width: 1px;
     margin-top: 26px !important;
     margin-bottom: 26px !important;
-}
+} */
 
 /* * * * Customer Reviews Component  * * * */
-.ReviewRating {
+/* .ReviewRating {
     grid-area: reviewRating;
 }
 
@@ -182,11 +182,11 @@ AddReview Component Styles
     font-size: 13px !important;
     line-height: 19px !important;
     color: #767676;
-}
+} */
 
 
 /* * * * By Feature Component * * * */
-.ByFeature table {
+/* .ByFeature table {
     border-collapse: collapse;
     border-spacing: 2px;
     width: 100%
@@ -211,9 +211,9 @@ AddReview Component Styles
 }
 
 .textComponent {
-    margin-left: 1em;
-}
-/* * * *  middle-container style div * * * */
+    margin-left: 1em; */
+/* } */
+/* * * *  middle-container style div * * *
 .middle-container {
     grid-area: middle-container;
     display: grid;
@@ -223,13 +223,13 @@ AddReview Component Styles
                         ". imageCarousel ."
                         ". reviewComments ."
     ;
-}
+} */
 /* * * * ADD COMMENT SECTION * * * */
-.addCommentPage {
+/* .addCommentPage {
     grid-area: reviewComments;
-}
+} */
 
-/* * * * Image Carousel Component * * * */
+/* * * * Image Carousel Component * * *
 
 .ImageCarousel {
     grid-area: imageCarousel;
@@ -274,9 +274,9 @@ AddReview Component Styles
     flex-wrap: wrap;
     flex: 1 1 0;
     justify-content: space-around;
-}
+} */
 
-/* * * * ReviewComments Component * * * */
+/* * * * ReviewComments Component * * *
 .ReviewComments {
     grid-area: reviewComments;
     max-width: 500px;
@@ -356,7 +356,7 @@ AddReview Component Styles
 
 .dropDown {
     padding-right: 20px;
-}
+} */
 
 
 

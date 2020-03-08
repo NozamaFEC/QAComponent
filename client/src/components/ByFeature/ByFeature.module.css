@@ -1,0 +1,33 @@
+/* * * * By Feature Component * * * */
+.ByFeature table {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    width: 100%
+}
+
+.Byfeature p {
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    line-height: 1.255 !important;
+    color: #111;
+}
+
+.featureFlex {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.starComponent {
+    margin-left: auto;
+    text-align: center;
+}
+
+.textComponent {
+    margin-left: 1em;
+}
+
+.ratingText {
+    font-size: 13px !important;
+    line-height: 19px !important;
+    color: #767676;
+}

@@ -2,13 +2,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './ImageCarousel.module.css';
+
 
 const ImageCarousel = ({ customerImagesST }) => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="ImageCarousel">
+    <div className={styles.ImageCarousel}>
       <h3>Customer images</h3>
-      <div className="image-container">
+      <div className={styles.imageContainer}>
         {customerImagesST.slice(0, toggle ? 12 : 4).map((image) => (
           <img
             src={`${image.src}`}
@@ -18,7 +20,7 @@ const ImageCarousel = ({ customerImagesST }) => {
         ))}
       </div>
       <p
-        className="rating-text"
+        className={styles.ratingText}
         onClick={() => setToggle(!toggle)}
       // eslint-disable-next-line jsx-a11y/no-noninteractive-element-to-interactive-role
         role="button"

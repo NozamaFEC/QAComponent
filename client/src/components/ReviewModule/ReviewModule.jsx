@@ -1,12 +1,16 @@
 import React from 'react';
 
-import CustomerReviews from './CustomerReviews';
-import ReviewThisProduct from './ReviewThisProduct';
-import ImageCarousel from './ImageCarousel';
-import ReviewComments from './ReviewComments';
-import AddCommentPage from './AddCommentPage';
-import { images } from './images';
-import { texting } from './sampleText';
+import style from './ReviewModule.module.css';
+
+
+import CustomerReviews from '../CustomerReviews/CustomerReviews';
+import ReviewThisProduct from '../ReviewThisProduct/ReviewThisProduct';
+import ImageCarousel from '../ImageCarousel/ImageCarousel';
+import ReviewComments from '../ReviewComments/ReviewComments';
+import AddCommentPage from '../AddCommentPage/AddCommentPage';
+
+import { images } from '../images';
+import { texting } from '../sampleText';
 
 class ReviewModule extends React.Component {
   constructor(props) {
@@ -50,7 +54,7 @@ class ReviewModule extends React.Component {
       customerReviewsST, byFeatureST, customerImagesST, texts, reviewThisProductST,
     } = this.state;
     return (
-      <div className="ReviewModule">
+      <div className={style.ReviewModule}>
         <CustomerReviews
           customerReviewsST={customerReviewsST}
           byFeatureST={byFeatureST}
@@ -58,7 +62,7 @@ class ReviewModule extends React.Component {
         <ReviewThisProduct
           handleClick={this.handleClick}
         />
-        <div className="middle-container">
+        <div className={style.middleContainer}>
           <ImageCarousel
             customerImagesST={customerImagesST}
           />

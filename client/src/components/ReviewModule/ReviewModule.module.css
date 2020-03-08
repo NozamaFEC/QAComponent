@@ -1,0 +1,30 @@
+/* Customer Review Component */
+.ReviewModule {
+    display: grid;
+    grid-template-columns: 14em 1fr;
+    grid-template-rows: 25em 5em 30em 1fr;
+    grid-template-areas:
+        "reviewRating middle-container"
+        "reviewRating middle-container"
+        "addReview middle-container"
+        ". middle-container"
+    ;
+    border-color: black;
+    grid-gap: 2px;
+    border-style: dotted;
+    padding: 18px;
+    font-family: Arial,
+        sans-serif;
+}
+
+/* * * *  middle-container style div * * * */
+.middleContainer {
+    grid-area: middle-container;
+    display: grid;
+    grid-template-columns: 0.1fr 0.85fr 0.05fr;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas:
+        ". imageCarousel ."
+        ". reviewComments ."
+    ;
+}

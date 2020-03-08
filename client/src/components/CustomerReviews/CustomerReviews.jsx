@@ -2,15 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import StarRatingComponent from 'react-star-rating-component';
-import RatingsHistogram from './RatingsHistogram';
-import ByFeature from './ByFeature';
+import RatingsHistogram from '../RatingsHistogram/RatingsHistogram';
+import ByFeature from '../ByFeature/ByFeature';
+import styles from './CustomerReviews.module.css';
 
 const CustomerReviews = ({ customerReviewsST, byFeatureST }) => {
   const {
     numberOfStars, rate, histogram, customers,
   } = customerReviewsST;
   return (
-    <div className="ReviewRating">
+    <div className={styles.ReviewRating}>
       <h2>Customer reviews</h2>
       <div>
         <StarRatingComponent
@@ -18,20 +19,20 @@ const CustomerReviews = ({ customerReviewsST, byFeatureST }) => {
           value={numberOfStars}
           editing={false}
         />
-        <span className="rating-letter-space" />
+        <span className={styles.ratingLetterSpace} />
         <span>
           {`${rate}`}
           {' '}
           out of 5
         </span>
-        <p className="rating-text">
+        <p className={styles.ratingText}>
           {`${customers} customer ratings`}
           {' '}
         </p>
         <RatingsHistogram
           histogram={histogram}
         />
-        <hr className="spacingBorder" />
+        <hr className={styles.spacingBorder} />
         <ByFeature
           byFeatureST={byFeatureST}
         />

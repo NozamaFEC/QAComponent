@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles.css';
 
-import ReviewModule from './components/ReviewModule';
+import ReviewModule from './components/ReviewModule/ReviewModule';
 
 ReactDOM.render(<ReviewModule />, document.getElementById('zach'));

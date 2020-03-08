@@ -1,0 +1,4 @@
+/* * * * ADD COMMENT SECTION * * * */
+.addCommentPage {
+    grid-area: reviewComments;
+}

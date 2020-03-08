@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import style from './ReviewThisProduct.module.css';
 
-import AdComponent from './AdComponent';
+import AdComponent from '../AdComponent/AdComponent';
 
 const ReviewThisProduct = ({ handleClick }) => (
-  <div className="AddReview">
-    <hr className="spacingBorder" />
+  <div className={style.AddReview}>
+    <hr className={style.spacingBorder} />
     <h3>Review this product</h3>
     <p>Share your thoughts with other customers</p>
     <button
       type="submit"
-      className="buttonStyles"
+      className={style.buttonStyles}
       onClick={handleClick}
     >
       Write a customer review
     </button>
-    <hr className="spacingBorder" />
+    <hr className={style.spacingBorder} />
     <AdComponent />
   </div>
 );

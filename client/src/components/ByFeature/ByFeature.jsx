@@ -2,43 +2,44 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import StarRatingComponent from 'react-star-rating-component';
+import styles from './ByFeature.module.css';
 
 
 const ByFeature = ({ byFeatureST }) => {
   const { val1, val2, val3 } = byFeatureST;
   return (
-    <div className="Byfeature">
+    <div className={styles.Byfeature}>
       <p>By feature</p>
-      <div className="featureFlex">
-        <span className="rating-text">Value for money</span>
+      <div className={styles.featureFlex}>
+        <span className={styles.ratingText}>Value for money</span>
         <StarRatingComponent
-          className="starComponent"
+          className={styles.starComponent}
           name="valueForMoney"
           value={val1}
           editing={false}
         />
-        <span className="rating-text  textComponent">{`${val1}.0`}</span>
+        <span className={`${styles.ratingText}  ${styles.textComponent}`}>{`${val1}.0`}</span>
       </div>
-      <div className="featureFlex">
-        <span className="rating-text"> Durability </span>
+      <div className={styles.featureFlex}>
+        <span className={styles.ratingText}> Durability </span>
         <StarRatingComponent
-          className="starComponent"
+          className={styles.starComponent}
           name="durability"
           value={val2}
           editing={false}
         />
-        <span className="rating-text textComponent">{`${val2}.0`}</span>
+        <span className={` ${styles.ratingText} ${styles.textComponent}`}>{`${val2}.0`}</span>
       </div>
-      <div className="featureFlex">
+      <div className={styles.featureFlex}>
 
-        <span className="rating-text"> Material quality </span>
+        <span className={styles.ratingText}> Material quality </span>
         <StarRatingComponent
-          className="starComponent"
+          className={styles.starComponent}
           name="materialQuality"
           value={val3}
           editing={false}
         />
-        <span className="rating-text textComponent">{`${val3}.0`}</span>
+        <span className={` ${styles.ratingText} ${styles.textComponent} `}>{`${val3}.0`}</span>
       </div>
     </div>
   );

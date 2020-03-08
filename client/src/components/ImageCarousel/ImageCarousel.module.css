@@ -1,0 +1,85 @@
+/* * * * Image Carousel Component * * * */
+
+.ImageCarousel {
+    grid-area: imageCarousel;
+    max-width: 500px;
+    width: 90.5%;
+    display: block;
+    zoom: 1;
+    min-height: 250px;
+}
+
+.ImageCarousel h3 {
+    padding: 0;
+    margin: 0 !important;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.255;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+    color: #111;
+    text-rendering: optimizeLegibility;
+}
+
+.imageContainer img {
+    vertical-align: top;
+    border: 0;
+    width: 22.5%;
+    padding: 0.25%;
+    height: 4.5em;
+    flex: 1 1 0;
+    object-fit: cover;
+}
+
+.imageContainer {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    justify-content: space-around;
+}
+.rating-letter-space {
+    font-size: 17px !important;
+    line-height: 1.255 !important;
+    text-rendering: optimizeLegibility;
+    margin: 0 0.5em;
+}
+
+.ReviewRating table {
+    border-collapse: collapse;
+    border-spacing: 1px;
+
+}
+
+.rating-bar-container {
+    z-index: -1;
+    display: block;
+    width: 6em;
+    background: linear-gradient(to bottom, #eee, #f6f6f6);
+    background-image: linear-gradient(rgb(238, 238, 238), rgb(246, 246, 246));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #f3f3f3;
+    height: 1em;
+    text-align: center;
+    border-radius: 1px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .4),
+        inset 0 0 0 1px rgba(0, 0, 0, .1);
+
+}
+
+.ratingText {
+    font-size: 13px !important;
+    line-height: 19px !important;
+    color: #767676;
+}

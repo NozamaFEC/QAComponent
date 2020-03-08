@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import styles from './RatingsHistogram.module.css';
 
 const Div = styled.div`
     display: block;
@@ -21,77 +22,77 @@ const RatingsHistogram = ({ histogram }) => {
       <tbody>
         <tr>
           <td>
-            <span className="rating-text">5 star</span>
-            <span className="rating-letter-space" />
+            <span className={styles.ratingText}>5 star</span>
+            <span className={styles.ratingLetterSpace} />
           </td>
           <td>
-            <div className="rating-bar-container">
+            <div className={styles.ratingBarContainer}>
               <Div width={star5} />
             </div>
           </td>
           <td>
-            <span className="rating-letter-space" />
-            <span className="rating-text">{star5}</span>
+            <span className={styles.ratingLetterSpace} />
+            <span className={styles.ratingText}>{star5}</span>
           </td>
         </tr>
         <tr>
           <td>
-            <span className="rating-text">4 star</span>
-            <span className="rating-letter-space" />
+            <span className={styles.ratingText}>4 star</span>
+            <span className={styles.ratingLetterSpace} />
           </td>
           <td>
-            <div className="rating-bar-container">
+            <div className={styles.ratingBarContainer}>
               <Div width={star4} />
             </div>
           </td>
           <td>
-            <span className="rating-letter-space" />
-            <span className="rating-text">{star4}</span>
+            <span className={styles.ratingLetterSpace} />
+            <span className={styles.ratingText}>{star4}</span>
           </td>
         </tr>
         <tr>
           <td>
-            <span className="rating-text">3 star</span>
-            <span className="rating-letter-space" />
+            <span className={styles.ratingText}>3 star</span>
+            <span className={styles.ratingLetterSpace} />
           </td>
           <td>
-            <div className="rating-bar-container">
+            <div className={styles.ratingBarContainer}>
               <Div width={star3} />
             </div>
           </td>
           <td>
-            <span className="rating-letter-space" />
-            <span className="rating-text">{star3}</span>
+            <span className={styles.ratingLetterSpace} />
+            <span className={styles.ratingText}>{star3}</span>
           </td>
         </tr>
         <tr>
           <td>
-            <span className="rating-text">2 star</span>
-            <span className="rating-letter-space" />
+            <span className={styles.ratingText}>2 star</span>
+            <span className={styles.ratingLetterSpace} />
           </td>
           <td>
-            <div className="rating-bar-container">
+            <div className={styles.ratingBarContainer}>
               <Div width={star2} />
             </div>
           </td>
           <td>
-            <span className="rating-letter-space" />
-            <span className="rating-text">{star2}</span>
+            <span className={styles.ratingLetterSpace} />
+            <span className={styles.ratingText}>{star2}</span>
           </td>
         </tr>
         <tr>
           <td>
-            <span className="rating-text">1 star</span>
-            <span className="rating-letter-space" />
+            <span className={styles.ratingText}>1 star</span>
+            <span className={styles.ratingLetterSpace} />
           </td>
           <td>
-            <div className="rating-bar-container">
+            <div className={styles.ratingBarContainer}>
               <Div width={star1} />
             </div>
           </td>
           <td>
-            <span className="rating-letter-space" />
-            <span className="rating-text">{star1}</span>
+            <span className={styles.ratingLetterSpace} />
+            <span className={styles.ratingText}>{star1}</span>
           </td>
         </tr>
       </tbody>
